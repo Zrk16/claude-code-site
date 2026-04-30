@@ -68,10 +68,11 @@ export function Pricing() {
           transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
           className="text-center max-w-2xl mx-auto mb-16"
         >
-          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tighter leading-[1] text-balance">
-            Simple, <span className="gradient-text">predictable</span> pricing.
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-white/40 mb-5">Pricing</p>
+          <h2 className="text-[clamp(2.5rem,6vw,5.5rem)] font-bold tracking-[-0.04em] leading-[1] text-balance">
+            Simple, <span className="gradient-text">predictable.</span>
           </h2>
-          <p className="mt-6 text-lg text-white/60">
+          <p className="mt-6 text-xl text-white/55">
             Start free. Scale when you ship more.
           </p>
         </motion.div>

@@ -2,7 +2,7 @@ import { Navbar } from "@/components/Navbar";
 import { ScrollProgress } from "@/components/ScrollProgress";
 import { Hero } from "@/components/Hero";
 import { LogoMarquee } from "@/components/LogoMarquee";
-import { Features } from "@/components/Features";
+import { FeatureShowcase } from "@/components/FeatureShowcase";
 import { TerminalDemo } from "@/components/TerminalDemo";
 import { Pricing } from "@/components/Pricing";
 import { FAQ } from "@/components/FAQ";
@@ -16,7 +16,7 @@ export default function Page() {
       <Navbar />
       <Hero />
       <LogoMarquee />
-      <Features />
+      <FeatureShowcase />
       <TerminalDemo />
       <Pricing />
       <FAQ />
