@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Github, Sparkles } from "lucide-react";
+import { Github, Sparkles, Star } from "lucide-react";
 import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
 
@@ -9,7 +9,7 @@ const links = [
   { label: "Features", href: "#features" },
   { label: "Demo", href: "#demo" },
   { label: "Pricing", href: "#pricing" },
-  { label: "Docs", href: "#docs" },
+  { label: "FAQ", href: "#faq" },
 ];
 
 export function Navbar() {
@@ -60,10 +60,15 @@ export function Navbar() {
             href="https://github.com/anthropics/claude-code"
             target="_blank"
             rel="noreferrer"
-            className="hidden sm:inline-flex items-center justify-center h-9 w-9 rounded-md border border-border hover:border-border-strong text-white/70 hover:text-white transition-colors"
-            aria-label="GitHub"
+            className="hidden sm:inline-flex items-center gap-2 h-9 px-3 rounded-md border border-border hover:border-border-strong text-white/70 hover:text-white transition-colors group"
+            aria-label="Star on GitHub"
           >
             <Github className="h-4 w-4" />
+            <span className="text-sm font-medium">Star</span>
+            <span className="flex items-center gap-1 pl-2 ml-1 border-l border-border text-xs font-mono text-white/50 group-hover:text-amber-300 transition-colors">
+              <Star className="h-3 w-3 fill-current" />
+              42.1k
+            </span>
           </a>
           <a
             href="#install"
